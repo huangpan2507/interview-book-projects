@@ -32,13 +32,13 @@ public class Mystack1 {
     private Stack<Integer> stackMin;
 
     public Mystack1(){
-        stackData = new Stack<>();
-        stackMin = new Stack<>();
+        this.stackData = new Stack<>();
+        this.stackMin = new Stack<>();
     }
 
     public void push(int newNum){
-        if (stackMin.isEmpty() || this.getMin()>=newNum){
-            stackMin.push(newNum);
+        if (this.stackMin.isEmpty() || this.getMin()>=newNum){
+            this.stackMin.push(newNum);
             System.out.println("You push num:"+ newNum + " to StackMin");
         }
         stackData.push(newNum);
