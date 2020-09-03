@@ -49,10 +49,10 @@ public class RecurReverseStack {
             sta.stack1.add(x);
         }
         System.out.println(sta.stack1.toString());
-        int last = sta.getAndRemoveElement(sta.stack1);          // 比如栈顶到栈底5,4,3,2,1则调用getAndRemoveElement后为 5,4,3,2四个数，last=1未放入,所以需要把栈最底层的数字重新放回去
+        int last = sta.getAndRemoveElement(sta.stack1);          // 比如栈顶到栈底5,4,3,2,1则调用getAndRemoveElement后为 5,4,3,2四个数，last=1未放入,所以需要把栈最底层的数字保存下来，方便最后放回栈顶
         System.out.println(sta.stack1.toString());
         sta.Reverse(sta.stack1);
-        sta.stack1.push(last);
+        sta.stack1.push(last);                                   // 将最开始拿出来的栈底元素放回栈顶，达到逆序
         System.out.println(sta.stack1.toString());
     }
 
