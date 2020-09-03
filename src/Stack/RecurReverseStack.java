@@ -16,7 +16,7 @@ public class RecurReverseStack {
         if (stack.isEmpty()){
             return result;
         }else{
-            int last = getAndRemoveElement(stack);
+            int last = getAndRemoveElement(stack);            //此处的作用就是将栈中最底层那个数字取出来，再把栈中的数据还原放好(少了原先栈底数值)
             stack.push(result);
             return last;
         }
@@ -44,9 +44,6 @@ public class RecurReverseStack {
         System.out.println(sta.stack1.toString());
         sta.Reverse(sta.stack1);
         sta.stack1.push(last);
-
-
-
         System.out.println(sta.stack1.toString());
     }
 
