@@ -13,7 +13,7 @@ public class RecurReverseStack {
 
  /*
  * getAndRemoveElement函数：作用就是将栈中最底层那个数字取出来，再把栈中的数据还原放好(少了原先栈底数值)
- * 递归和栈这种结构结合，出栈抛出的是栈顶元素 + 递归压入的是最近刚抛出的栈顶元素，这样就实现了逆序
+ * 递归和栈这种结构结合，出栈抛出的是栈顶元素 + 递归压入的是最近刚抛出的元素(栈顶)，这样就实现了逆序
  * */
     public static int getAndRemoveElement(Stack<Integer> stack){
         int result = stack.pop();
