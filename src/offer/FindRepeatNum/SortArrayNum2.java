@@ -5,8 +5,8 @@ import java.util.Arrays;
 /*
 * SortArrayNum2： 在while循环里，增加了判断nums[i] != nums[nums[i]]，即交换元素本来应呆位置上的元素是否与该i下标 的值一样
 * 这里有个关键点： 数组元素值从0-length
-*               1. 原地数组元素排序------》下标与元素值一一对应， 0123下标对应0123数值
-*               2.找出数组中重复的值
+*              
+*              1.找出数组中重复的值
 * */
 
 public class SortArrayNum2 {
