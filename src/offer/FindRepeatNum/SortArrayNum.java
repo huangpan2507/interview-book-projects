@@ -32,6 +32,6 @@ public class SortArrayNum {
         System.out.println(c.length);
         a.sort(c);
         System.out.println(Arrays.toString(c));
-        System.out.println(c.toString());
+        System.out.println(c.toString()); 
     }
 }
