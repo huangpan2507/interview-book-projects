@@ -41,7 +41,7 @@ public class RecurReverseStack {
         System.out.println(i);                                  // 打印last=2
         Reverse(stack);                                         // 调用Reverse函数，里面继续调用递归getAndRemoveElement将栈顶到栈底：3,4,5 ---》last=i=3， 栈顶到栈底：5,4
         stack.push(i);                                          // 再次调用Reverse， 非空，又将栈里面最下面的 last=i=4 吐出来，栈顶到栈底：5，再调用Reverse 里面调用getAndRemoveElement
-    }                                                           // 再次吐出最下面的 last=i=5， 栈为空，本层Reverse递归return结束。压入栈上一层元素：i=5，继续依次压入 i=4,3,2
+    }                                                           // 再次吐出最下面的 last=i=5， 栈为空，本层Reverse递归return结束。压入栈：i=5，继续依次压入 i=4,3,2
 
     public static void main(String[] args){
         RecurReverseStack sta = new RecurReverseStack();
